@@ -145,14 +145,20 @@ Installer Poppler pour Windows :
 
 # ▶️ Exemple d’utilisation
 
+
 ```python
 from extracteur_documents import ExtracteurDocuments
 
-fichier = r"C:\Users\Valencia\Downloads\Facture.pdf"
+# chemin du fichier à analyser
+fichier = r"C:\Users\Valencia\Downloads\rapport-annuel.pdf"
 
+# extraction du texte et des tableaux
 texte, tables = ExtracteurDocuments.detect_and_extract(fichier)
 
+# affichage du texte
 print(texte[:1000])
+
+# nombre de tableaux détectés
 print("Nombre de tables :", len(tables))
 ```
 
@@ -192,7 +198,7 @@ Une vidéo de démonstration du projet sera prochainement disponible.
 
 # 👩‍💻 Auteur
 
-Valencia
+Darie-Valencia MABIALA-NZAMBILANOU
 
  Data & IA Enthusiast
 
